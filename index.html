@@ -1,0 +1,55 @@
+<!DOCTYPE HTML>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <meta http-equiv="X-UA-Compatible" content="ie=edge" />
+    <title>WeatherApp</title>
+
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/materialize/1.0.0/css/materialize.min.css">
+    <!-- <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.4.1/css/bootstrap.min.css" integrity="sha384-Vkoo8x4CGsO3+Hhxv8T/Q5PaXtkKtu6ug5TOeNV6gBiFeWPGFN9MuhOf23Q9Ifjh" crossorigin="anonymous"> -->
+
+    <link href="https://fonts.googleapis.com/css?family=Poppins:100,200,300,400,500,600,700,900&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="style.css" />
+
+  </head>
+<title>WeatherApp//5-Day Forecast</title>
+<body>
+
+  <nav>
+    <div class="nav-wrapper">
+      <a href="#" class="brand-logo center">WeatherApp</a>
+      <ul id="nav-mobile" class="left hide-on-med-and-down">
+        <!-- <li><a href="sass.html">Sass</a></li>
+        <li><a href="badges.html">Components</a></li>
+        <li><a href="collapsible.html">JavaScript</a></li> -->
+      </ul>
+    </div>
+  </nav>
+<br>
+  <div class="container form-group has-search">
+    <input class="z-depth-1 search" type="submit" value="GO" id="add-city" style="float: right">
+    <div style="overflow: hidden; padding-right: .5em;">
+    <input type="text" id="city-input">
+    </div>
+  </div>
+  </br>
+  
+  <div class="container" id="city-view"></div>
+  <div class="container"></br></br>
+  <!-- <div class="card" style="width: 18rem;"> -->
+  <div class="col s1 day1">
+    <div class="cityName"></div>
+    <div class="wind"></div>
+    <div class="humidity"></div>
+    <div class="tempF"></div>
+    <div class="weather"></div>
+  </div>
+<!-- </div> -->
+
+
+  <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.2.1/jquery.min.js"></script>
+  <script type="text/javascript" src="script.js"></script>
+</body>
+
+</html>
