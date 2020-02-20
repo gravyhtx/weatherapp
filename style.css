@@ -15,3 +15,17 @@ body,
 #city-view {
   font-size: 12px;
 }
+
+.head {
+  margin-bottom: -20px;
+}
+
+h3 {
+  font-size: 16px;
+  margin-bottom: -5px;
+}
+
+.fc {
+  margin: 20px;
+  align-content: center;
+}

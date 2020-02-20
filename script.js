@@ -1,3 +1,4 @@
+moment()
 // var city = search.val();
 //     var queryURL = "https://api.openweathermap.org/data/2.5/weather?" + city +
 //     "q=Bujumbura,Burundi&units=imperial&appid=" + APIKey;
@@ -8,10 +9,10 @@ function citySearch() {
 
   var city = $(this).attr("data-name");
   var APIKey = "166a433c57516f51dfab1f7edaed8413";
-  var queryURL = "https://api.openweathermap.org/data/2.5/weather?q=" + city +
-  "&units=imperial&appid=" + APIKey;
-  // var queryURL = "https://api.openweathermap.org/data/2.5/forecast?q=" + city +
+  // var queryURL = "https://api.openweathermap.org/data/2.5/weather?q=" + city +
   // "&units=imperial&appid=" + APIKey;
+  var queryURL = "https://api.openweathermap.org/data/2.5/forecast?q=" + city +
+  "&units=imperial&appid=" + APIKey;
 
     // Here we run our AJAX call to the OpenWeatherMap API
   $.ajax({
@@ -20,31 +21,80 @@ function citySearch() {
     })
   // We store all of the retrieved data inside of an object called "response"
   .then(function(response) {
-  // var math1 = Math.round(response.main.temp) - 273.15;
-  // var math2 = Math.round(math1) * 1.80;
 
-  
-    // var fah = Math.round(math2)
-  // Log the queryURL
   console.log(queryURL);
+  
   // Log the resulting object
   console.log(response);
-  // $(".cityName").text(response.city.name + ", " + response.sys.country);
-  // $(".wind").text("Wind Speed: " + response.list.0.wind.speed);
-  // $(".tempF").text("Temperature: " + Math.floor(response.main.temp) + "°F");
-  // $(".humidity").text("Humidity: " + response.main.humidity);
-  // $(".weather").text("Weather: " + response.weather[0].main + " / " + response.weather[0].description);
-  // $("#cities-view").text(JSON.stringify(response));
 
-
-
-  $(".cityName").text(response.name + ", " + response.sys.country);
-  $(".wind").text("Wind Speed: " + response.wind.speed);
-  $(".tempF").text("Temperature: " + Math.floor(response.main.temp) + "°F");
-  $(".humidity").text("Humidity: " + response.main.humidity);
-  $(".weather").text("Weather: " + response.weather[0].main + " / " + response.weather[0].description);
   $("#cities-view").text(JSON.stringify(response));
+
+  $(".wind1").text("Wind Speed: " + response.list[0].wind.speed);
+  $(".tempF1").text("Temperature: " + Math.floor(response.list[0].main.temp) + "°F");
+  $(".humidity1").text("Humidity: " + response.list[0].main.humidity);
+  $(".weather1").text("Weather: " + response.list[0].weather[0].main + " / " + response.list[0].weather[0].description);
+
+  $(".wind2").text("Wind Speed: " + response.list[1].wind.speed);
+  $(".tempF2").text("Temperature: " + Math.floor(response.list[1].main.temp) + "°F");
+  $(".humidity2").text("Humidity: " + response.list[1].main.humidity);
+  $(".weather2").text("Weather: " + response.list[1].weather[0].main + " / " + response.list[1].weather[0].description);
+
+
+  $(".wind3").text("Wind Speed: " + response.list[2].wind.speed);
+  $(".tempF3").text("Temperature: " + Math.floor(response.list[2].main.temp) + "°F");
+  $(".humidity3").text("Humidity: " + response.list[2].main.humidity);
+  $(".weather3").text("Weather: " + response.list[2].weather[0].main + " / " + response.list[2].weather[0].description);
+
+
+  $(".wind4").text("Wind Speed: " + response.list[3].wind.speed);
+  $(".tempF4").text("Temperature: " + Math.floor(response.list[3].main.temp) + "°F");
+  $(".humidity4").text("Humidity: " + response.list[3].main.humidity);
+  $(".weather4").text("Weather: " + response.list[3].weather[0].main + " / " + response.list[3].weather[0].description);
+
+
+  $(".wind5").text("Wind Speed: " + response.list[4].wind.speed);
+  $(".tempF5").text("Temperature: " + Math.floor(response.list[4].main.temp) + "°F");
+  $(".humidity5").text("Humidity: " + response.list[4].main.humidity);
+  $(".weather5").text("Weather: " + response.list[4].weather[0].main + " / " + response.list[4].weather[0].description);
+
+
+
   })
+}
+
+function citySearchTD() {
+
+  var city2 = $(this).attr("data-name");
+  var APIKey = "166a433c57516f51dfab1f7edaed8413";
+  var queryURL2 = "https://api.openweathermap.org/data/2.5/weather?q=" + city2 +
+  "&units=imperial&appid=" + APIKey;
+  // var queryURL2 = "https://api.openweathermap.org/data/2.5/uv?q=" + city +
+  // "&units=imperial&appid=" + APIKey;
+
+    // Here we run our AJAX call to the OpenWeatherMap API
+  $.ajax({
+      url: queryURL2,
+      method: "GET"
+    })
+  // We store all of the retrieved data inside of an object called "response"
+  .then(function(response2) {
+    var queryURL2 = "https://api.openweathermap.org/data/2.5/weather?q=" + city2 +
+    "&units=imperial&appid=" + APIKey;
+    var today = moment().format('LLLL');
+    $(".date").text(today);
+    $(".cityName").text(response2.name + ", " + response2.sys.country);
+    $(".wind").text("Wind Speed: " + response2.wind.speed);
+    $(".tempF").text("Temperature: " + Math.floor(response2.main.temp) + "°F");
+    $(".humidity").append("Humidity: " + response2.main.humidity);
+    $(".weather").text("Weather: " + response2.weather[0].main + " / " + response2.weather[0].description);
+
+
+
+    // $("#cities-view").text(JSON.stringify(response2));
+    console.log(response2);
+  })
+  console.log(queryURL2);
+  
 }
 
   // var math1 = Math.round(response.main.temp) - 273.15;
@@ -88,19 +138,6 @@ function renderCards() {
 
 $("#add-city").on("click", function(event) {
 
-  // var city = $(this).attr("data-name");
-  // var APIKey = "166a433c57516f51dfab1f7edaed8413";
-  // var queryURL = "https://api.openweathermap.org/data/2.5/weather?q=" + city +
-  //   "&units=imperial&appid=" + APIKey;
-
-  //   // Here we run our AJAX call to the OpenWeatherMap API
-  // $.ajax({
-  //     url: queryURL,
-  //     method: "GET"
-  //   })
-  // // We store all of the retrieved data inside of an object called "response"
-  // .then(function(response) {
-
   event.preventDefault();
 
   // This line grabs the input from the textbox
@@ -114,6 +151,7 @@ $("#add-city").on("click", function(event) {
 });
 
 $(document).on("click", ".city", citySearch);
+$(document).on("click", ".city", citySearchTD);
 renderCards();
 
 
