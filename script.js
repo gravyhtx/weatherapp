@@ -3,7 +3,16 @@ moment()
 //     var queryURL = "https://api.openweathermap.org/data/2.5/weather?" + city +
 //     "q=Bujumbura,Burundi&units=imperial&appid=" + APIKey;
 // var APIKey = "166a433c57516f51dfab1f7edaed8413";
-var cities = ["houston",];
+var cities = ["houston", "tokyo", "oslo", "mumbai", "london, uk",];
+
+$('.d1').text(moment(new Date()).add(1,'day').format("MM/DD"));
+$('.d2').text(moment(new Date()).add(2,'day').format("MM/DD"));
+$('.d3').text(moment(new Date()).add(3,'day').format("MM/DD"));
+$('.d4').text(moment(new Date()).add(4,'day').format("MM/DD"));
+$('.d5').text(moment(new Date()).add(5,'day').format("MM/DD"));
+
+var today = moment().format('LLLL');
+    $(".date").text(today);
 
 function citySearch() {
 
@@ -29,71 +38,203 @@ function citySearch() {
 
   $("#cities-view").text(JSON.stringify(response));
 
-  $(".wind1").text("Wind Speed: " + response.list[0].wind.speed);
-  $(".tempF1").text("Temperature: " + Math.floor(response.list[0].main.temp) + "°F");
+  $(".tempF1").text("Temp: " + Math.floor(response.list[0].main.temp) + "°F");
   $(".humidity1").text("Humidity: " + response.list[0].main.humidity);
-  $(".weather1").text("Weather: " + response.list[0].weather[0].main + " / " + response.list[0].weather[0].description);
 
-  $(".wind2").text("Wind Speed: " + response.list[1].wind.speed);
-  $(".tempF2").text("Temperature: " + Math.floor(response.list[1].main.temp) + "°F");
+  // $(".icon1").text(icn1);
+
+
+  $(".tempF2").text("Temp: " + Math.floor(response.list[1].main.temp) + "°F");
   $(".humidity2").text("Humidity: " + response.list[1].main.humidity);
-  $(".weather2").text("Weather: " + response.list[1].weather[0].main + " / " + response.list[1].weather[0].description);
+  // $(".icon2").text(icn2);
 
 
-  $(".wind3").text("Wind Speed: " + response.list[2].wind.speed);
-  $(".tempF3").text("Temperature: " + Math.floor(response.list[2].main.temp) + "°F");
+  $(".tempF3").text("Temp: " + Math.floor(response.list[2].main.temp) + "°F");
   $(".humidity3").text("Humidity: " + response.list[2].main.humidity);
-  $(".weather3").text("Weather: " + response.list[2].weather[0].main + " / " + response.list[2].weather[0].description);
+  // $(".icon3").text(icn3);
 
 
-  $(".wind4").text("Wind Speed: " + response.list[3].wind.speed);
-  $(".tempF4").text("Temperature: " + Math.floor(response.list[3].main.temp) + "°F");
+  $(".tempF4").text("Temp: " + Math.floor(response.list[3].main.temp) + "°F");
   $(".humidity4").text("Humidity: " + response.list[3].main.humidity);
-  $(".weather4").text("Weather: " + response.list[3].weather[0].main + " / " + response.list[3].weather[0].description);
+  // $(".icon4").text(icn4);
 
 
-  $(".wind5").text("Wind Speed: " + response.list[4].wind.speed);
-  $(".tempF5").text("Temperature: " + Math.floor(response.list[4].main.temp) + "°F");
+  $(".tempF5").text("Temp: " + Math.floor(response.list[4].main.temp) + "°F");
   $(".humidity5").text("Humidity: " + response.list[4].main.humidity);
-  $(".weather5").text("Weather: " + response.list[4].weather[0].main + " / " + response.list[4].weather[0].description);
+  // $(".icon5").text(icn5);
+
+
+  // var weather= ["clear sky", "few clouds", "scattered clouds", "broken clouds", "shower rain", "rain", "thunderstorm", "snow", "mist"] 
+  // var icon1 = response.list[0].weather[0].description;
+  // var icon2= response.list[1].weather[0].description;
+  // var icon3= response.list[2].weather[0].description;
+  // var icon4 = response.list[3].weather[0].description;
+  // var icon5= response.list[4].weather[0].description;
+
+  // var icn1;
+  // var inc2;
+  // var icn3;
+  // var icn4;
+  // var icn5;
+
+  // // ---------------- 1 ---------------- //
+  // if (icon1 == weather[0]){
+  //   icn1= "wb_sunny"
+  // }
+  // if (icon1 == weather[1] || icon1 == weather[2] || icon1 == weather[3]){
+  //   icn1= "cloud_queue"
+  //   }
+  // if (icon1 == weather[0]){
+  //   icn1= ""
+  //   }
+  // if (icon1 == weather[0]){
+  //   icn1= ""
+  //   }
+  // if (icon1 == weather[0]){
+  //   icn1= ""
+  //   }
+  // if (icon1 == weather[0]){
+  //   icn1= ""
+  //   }
+  // if (icon1 == weather[0]){
+  //   icn1= ""
+  //   }
 
 
 
-  })
+  // // ---------------- 2 ---------------- //
+  // if (icon2 == weather[0]){
+  //   icn2= 
+  // }
+  // if (icon2 == weather[0]){
+  //   icn2=
+  // }
+  // if (icon2 == weather[0]){
+  //   icn2=
+  // }
+  // if (icon2 == weather[0]){
+  //   icn2=
+  // }
+  // if (icon2 == weather[0]){
+  //   icn2=
+  // }
+  // if (icon2 == weather[0]){
+  //   icn2=
+  // }
+  // if (icon2 == weather[0]){
+  //   icn2=
+  // }
+
+
+
+  // // ---------------- 3 ---------------- //
+  // if (icon3 == weather[0]){
+
+  // }
+  // if (icon3 == weather[0]){
+
+  //   }
+  // if (icon3 == weather[0]){
+
+  //   }
+  // if (icon3 == weather[0]){
+
+  //   }
+  // if (icon3 == weather[0]){
+
+  //   }
+  // if (icon3 == weather[0]){
+
+  //   }
+  // if (icon3 == weather[0]){
+
+  //   }
+
+
+
+  // // ---------------- 4 ---------------- //
+  // if (icon4 == weather[0]){
+
+  // }
+  // if (icon4 == weather[0]){
+
+  // }
+  // if (icon4 == weather[0]){
+
+  // }
+  // if (icon4 == weather[0]){
+
+  // }
+  // if (icon4 == weather[0]){
+
+  // }
+  // if (icon4 == weather[0]){
+
+  // }
+  // if (icon4 == weather[0]){
+
+  // }
+
+
+
+  // // ---------------- 5 ---------------- //
+  // if (icon5 == weather[0]){
+
+  // }
+  // if (icon5 == weather[0]){
+
+  // }
+  // if (icon5 == weather[0]){
+
+  // }
+  // if (icon5 == weather[0]){
+
+  // }
+  // if (icon5 == weather[0]){
+
+  // }
+  // if (icon5 == weather[0]){
+
+  // }
+  // if (icon5 == weather[0]){
+
+  // }
+
+})
 }
+
 
 function citySearchTD() {
 
   var city2 = $(this).attr("data-name");
   var APIKey = "166a433c57516f51dfab1f7edaed8413";
-  var queryURL2 = "https://api.openweathermap.org/data/2.5/weather?q=" + city2 +
+  var todayURL = "https://api.openweathermap.org/data/2.5/weather?q=" + city2 +
   "&units=imperial&appid=" + APIKey;
-  // var queryURL2 = "https://api.openweathermap.org/data/2.5/uv?q=" + city +
+  // var todayURL = "https://api.openweathermap.org/data/2.5/uv?q=" + city +
   // "&units=imperial&appid=" + APIKey;
 
     // Here we run our AJAX call to the OpenWeatherMap API
   $.ajax({
-      url: queryURL2,
+      url: todayURL,
       method: "GET"
     })
   // We store all of the retrieved data inside of an object called "response"
   .then(function(response2) {
-    var queryURL2 = "https://api.openweathermap.org/data/2.5/weather?q=" + city2 +
+    var todayURL = "https://api.openweathermap.org/data/2.5/weather?q=" + city2 +
     "&units=imperial&appid=" + APIKey;
-    var today = moment().format('LLLL');
-    $(".date").text(today);
     $(".cityName").text(response2.name + ", " + response2.sys.country);
     $(".wind").text("Wind Speed: " + response2.wind.speed);
     $(".tempF").text("Temperature: " + Math.floor(response2.main.temp) + "°F");
-    $(".humidity").append("Humidity: " + response2.main.humidity);
+    $(".humidity").text("Humidity: " + response2.main.humidity);
     $(".weather").text("Weather: " + response2.weather[0].main + " / " + response2.weather[0].description);
 
 
 
     // $("#cities-view").text(JSON.stringify(response2));
     console.log(response2);
+    console.log(todayURL);
   })
-  console.log(queryURL2);
+
   
 }
 
@@ -135,20 +276,26 @@ function renderCards() {
     
   }
 }
+if ($("#city-input").val() !==null) {
+  $("#add-city").on("click", function(event) {
 
-$("#add-city").on("click", function(event) {
+    event.preventDefault();
+    if ($("#city-input").val() !== "") {
+    // This line grabs the input from the textbox
+    var city = $("#city-input").val().trim();
+    
 
-  event.preventDefault();
+    // Adding the movie from the textbox to our array
+    cities.push(city);
+    console.log(cities);
+    // $("#cityName").text(response.name + ", " + response.sys.country);
+    renderCards();
+  
+  };
 
-  // This line grabs the input from the textbox
-  var city = $("#city-input").val().trim();
+})
+}
 
-  // Adding the movie from the textbox to our array
-  cities.push(city);
-  console.log(cities);
-  // $("#cityName").text(response.name + ", " + response.sys.country);
-  renderCards();
-});
 
 $(document).on("click", ".city", citySearch);
 $(document).on("click", ".city", citySearchTD);

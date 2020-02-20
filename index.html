@@ -6,41 +6,42 @@
     <meta http-equiv="X-UA-Compatible" content="ie=edge" />
     <title>WeatherApp</title>
 
-    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/materialize/1.0.0/css/materialize.min.css">
-    <!-- <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.4.1/css/bootstrap.min.css" integrity="sha384-Vkoo8x4CGsO3+Hhxv8T/Q5PaXtkKtu6ug5TOeNV6gBiFeWPGFN9MuhOf23Q9Ifjh" crossorigin="anonymous"> -->
+    <!-- <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/materialize/1.0.0/css/materialize.min.css"> -->
+    <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.4.1/css/bootstrap.min.css" integrity="sha384-Vkoo8x4CGsO3+Hhxv8T/Q5PaXtkKtu6ug5TOeNV6gBiFeWPGFN9MuhOf23Q9Ifjh" crossorigin="anonymous">
 
-    <link href="https://fonts.googleapis.com/css?family=Poppins:100,200,300,400,500,600,700,900&display=swap" rel="stylesheet">
+    <link href="https://fonts.googleapis.com/css?family=Muli:100,200,300,400,500,600,700,900&display=swap" rel="stylesheet">
     <link rel="stylesheet" href="style.css" />
 
   </head>
 <title>WeatherApp//5-Day Forecast</title>
 <body>
 
-  <nav>
-    <div class="nav-wrapper">
-      <a href="#" class="brand-logo center">WeatherApp</a>
-      <ul id="nav-mobile" class="left hide-on-med-and-down">
-        <!-- <li><a href="sass.html">Sass</a></li>
-        <li><a href="badges.html">Components</a></li>
-        <li><a href="collapsible.html">JavaScript</a></li> -->
-      </ul>
+
+    <div class="container">
+      <div class="large">
+      WeatherApp⛅
+      </div>
     </div>
-  </nav>
-<br>
+  <h3><div class="date"></div></h3><br>
+  <p class="container" id="city-view"></p>
+
+  <div class="container" style="overflow: hidden; padding-right: .5em;">
+  <input type="text" id="city-input">
+  <input class="z-depth-1 search" type="submit" value="Add to List" id="add-city">
+  </div>
   <div class="container form-group has-search">
-    <input class="z-depth-1 search" type="submit" value="GO" id="add-city" style="float: right">
-    <div style="overflow: hidden; padding-right: .5em;">
-    <input type="text" id="city-input">
+
+    </div>
     </div>
   </div>
-  <!-- </br> -->
+
   
-  <div class="container" id="city-view"></div>
-  <div class="container">
-  <!-- <div class="card" style="width: 18rem;"> -->
+  <div class="container" id="city-view"></div><br>
+
+
   <div class="col s1 day1" style="text-align: center;">
-    <div class="head"><h2 class="cityName"></h2></div>
-    <h3><div class="date"></div></h3><br>
+    <div class="head"><h2 class="cityName head"></h2></div>
+    <div class="info">
     <div class="wind"></div>
     <div class="humidity"></div>
     <div class="tempF"></div>
@@ -48,48 +49,70 @@
   </div>
   </div>
 
-  <div class="fc container-fluid">
-    <!-- <div class="card" style="width: 18rem;"> -->
-    <!-- <div class="col day1"> -->
-    <!-- style="text-align: center;" -->
-    
-      <!-- <div class="head1"><h2 class="cityName"></h2></div> -->
-      <!-- <div class="date1"></div> -->
-      <div class="card col s2">
+
+  <div class="fc m5 s1 row z-depth-0" style="text-align: center;">
+
+      <span class="card col s2 5">
+
+        <b><div class="d1 big"></div></b>
+        <div class="icon1"></div>
         <div class="tempF1"></div>
         <div class="wind1"></div>
         <div class="humidity1"></div>
-        <div class="weather1"></div>
-      </div>
-      <div class="card col s2">
+        <div class="we weather1"></div>
+        
+      </span>
+
+      <span class="card col s2 5">
+        
+        <b><div class="d2 big"></div></b>
+        <div class="icon2"></div>
         <div class="tempF2"></div>
         <div class="wind2"></div>
         <div class="humidity2"></div>
-        <div class="weather2"></div>
-      </div>
-      <div class="card col s2">
+        <div class="we weather2"></div>
+        
+      </span>
+
+      <span class="card col s2 5">
+        
+        <b><div class="d3 big"></div></b>
+        <div class="icon3"></div>
         <div class="tempF3"></div>
         <div class="wind3"></div>
         <div class="humidity3"></div>        
-        <div class="weather3"></div>
-      </div>
-      <div class="card col s2">
+        <div class="we weather3"></div>
+        
+      </span>
+
+      <span class="card col s2 5">
+        
+        <b><div class="d4 big"></div></b>
+        <div class="icon4"></div>
         <div class="tempF4"></div>
         <div class="wind4"></div>
         <div class="humidity4"></div>
-        <div class="weather4"></div>
-      </div>
-      <div class="card col s2">
+        <div class="we weather4"></div>
+        
+      </span>
+
+      <span class="card col s2 5">
+        
+        <b><div class="d5 big"></div></b>
+        <div class="icon5"></div>
         <div class="tempF5"></div>
         <div class="wind5"></div>
         <div class="humidity5"></div>
-        <div class="weather5"></div>
-      </div>
-    <!-- </div> -->
+        <div class="we weather5"></div>
+        
+      </span>
+
   
   </div>
-</br>
-<!-- </div> -->
+</br></br></br>
+<div class="footer">Have a nice day!</div>
+<br>
+
 
 
   <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.2.1/jquery.min.js"></script>

@@ -7,9 +7,27 @@
 html,
 body,
 .wrapper {
+  font-family: "Muli", sans-serif;
   height: 100%;
   margin: 0;
   padding: 0;
+  color: rgb(41, 41, 41);
+  text-align: center;
+}
+
+.large {
+  color: rgb(18, 18, 82);
+  font-size: 80px;
+  margin: -10px;
+}
+
+.footer {
+  color: rgb(235, 240, 243);
+  letter-spacing: 12px;
+}
+
+.big {
+  font-size: 72px;
 }
 
 #city-view {
@@ -17,15 +35,43 @@ body,
 }
 
 .head {
-  margin-bottom: -20px;
+  font-size: 38px;
+}
+
+.info {
+  /* margin-bottom: -5px; */
+  font-size: 20px;
+}
+
+.city {
+  font-size: 24px;
+  margin: 5px;
+}
+
+.we {
+  /* margin-bottom: -20px; */
 }
 
 h3 {
-  font-size: 16px;
+  font-size: 24px;
   margin-bottom: -5px;
+  color: rgb(129, 129, 129);
 }
 
 .fc {
   margin: 20px;
   align-content: center;
+}
+
+.card {
+  /* background-color: royalblue; */
+  color: aliceblue;
+  background-color: royalblue;
+  border: 0px;
+  padding: 20px;
+  margin: 10px; 
+}
+
+.big {
+  font-size: 24px;
 }
