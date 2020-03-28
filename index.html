@@ -1,28 +1,32 @@
 <!DOCTYPE HTML>
 <html lang="en">
-  <head>
-    <meta charset="UTF-8" />
-    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-    <meta http-equiv="X-UA-Compatible" content="ie=edge" />
-    <title>WeatherApp</title>
+<head>
+    
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <meta http-equiv="X-UA-Compatible" content="ie=edge" />
+  <title>WeatherApp</title>
 
-    <!-- <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/materialize/1.0.0/css/materialize.min.css"> -->
-    <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.4.1/css/bootstrap.min.css" integrity="sha384-Vkoo8x4CGsO3+Hhxv8T/Q5PaXtkKtu6ug5TOeNV6gBiFeWPGFN9MuhOf23Q9Ifjh" crossorigin="anonymous">
+  <!-- <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/materialize/1.0.0/css/materialize.min.css"> -->
+  <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.4.1/css/bootstrap.min.css" integrity="sha384-Vkoo8x4CGsO3+Hhxv8T/Q5PaXtkKtu6ug5TOeNV6gBiFeWPGFN9MuhOf23Q9Ifjh" crossorigin="anonymous">
 
-    <link href="https://fonts.googleapis.com/css?family=Muli:100,200,300,400,500,600,700,900&display=swap" rel="stylesheet">
-    <link rel="stylesheet" href="style.css" />
+  <link href="https://fonts.googleapis.com/css?family=Muli:100,200,300,400,500,600,700,900&display=swap" rel="stylesheet">
+  <link rel="stylesheet" href="style.css" />
 
-  </head>
+</head>
+  
 <title>WeatherApp//5-Day Forecast</title>
+  
 <body>
 
   <br><br>
   
-    <div class="container">
-      <div class="large">
-      WeatherApp⛅
-      </div>
+  <div class="container">
+    <div class="large">
+    WeatherApp⛅
     </div>
+  </div>
+  
   <h3><div class="date"></div></h3><br>
   <p class="container" id="city-view"></p>
 
@@ -36,11 +40,11 @@
     </div>
   </div>
 
-  
+
   <div class="container" id="city-view"></div><br>
 
 
-  <div class="col s1 day1" style="text-align: center;">
+  <div class="col s12 day1" style="text-align: center;">
     <div class="head"><h2 class="cityName head"></h2></div>
     <div class="info">
     <div class="wind"></div>
@@ -51,68 +55,70 @@
   </div>
 
 
-  <div class="fc m5 s1 row z-depth-0" style="text-align: center;">
+  <div class="fc m5 s12 row z-depth-0" style="text-align: center;">
 
-      <span class="card col s2 5">
+    <span class="card col s2 5">
 
-        <b><div class="d1 big"></div></b>
-        <div class="icon1"></div>
-        <div class="tempF1"></div>
-        <div class="wind1"></div>
-        <div class="humidity1"></div>
-        <div class="we weather1"></div>
-        
-      </span>
+      <b><div class="d1 big"></div></b>
+      <div class="icon1"></div>
+      <div class="tempF1"></div>
+      <div class="wind1"></div>
+      <div class="humidity1"></div>
+      <div class="we weather1"></div>
 
-      <span class="card col s2 5">
-        
-        <b><div class="d2 big"></div></b>
-        <div class="icon2"></div>
-        <div class="tempF2"></div>
-        <div class="wind2"></div>
-        <div class="humidity2"></div>
-        <div class="we weather2"></div>
-        
-      </span>
+    </span>
 
-      <span class="card col s2 5">
-        
-        <b><div class="d3 big"></div></b>
-        <div class="icon3"></div>
-        <div class="tempF3"></div>
-        <div class="wind3"></div>
-        <div class="humidity3"></div>        
-        <div class="we weather3"></div>
-        
-      </span>
+    <span class="card col l2 s12">
 
-      <span class="card col s2 5">
-        
-        <b><div class="d4 big"></div></b>
-        <div class="icon4"></div>
-        <div class="tempF4"></div>
-        <div class="wind4"></div>
-        <div class="humidity4"></div>
-        <div class="we weather4"></div>
-        
-      </span>
+      <b><div class="d2 big"></div></b>
+      <div class="icon2"></div>
+      <div class="tempF2"></div>
+      <div class="wind2"></div>
+      <div class="humidity2"></div>
+      <div class="we weather2"></div>
 
-      <span class="card col s2 5">
-        
-        <b><div class="d5 big"></div></b>
-        <div class="icon5"></div>
-        <div class="tempF5"></div>
-        <div class="wind5"></div>
-        <div class="humidity5"></div>
-        <div class="we weather5"></div>
-        
-      </span>
+    </span>
 
-  
+    <span class="card col l2 s12">
+
+      <b><div class="d3 big"></div></b>
+      <div class="icon3"></div>
+      <div class="tempF3"></div>
+      <div class="wind3"></div>
+      <div class="humidity3"></div>        
+      <div class="we weather3"></div>
+
+    </span>
+
+    <span class="card col l2 s12">
+
+      <b><div class="d4 big"></div></b>
+      <div class="icon4"></div>
+      <div class="tempF4"></div>
+      <div class="wind4"></div>
+      <div class="humidity4"></div>
+      <div class="we weather4"></div>
+
+    </span>
+
+    <span class="card col l2 s12">
+
+      <b><div class="d5 big"></div></b>
+      <div class="icon5"></div>
+      <div class="tempF5"></div>
+      <div class="wind5"></div>
+      <div class="humidity5"></div>
+      <div class="we weather5"></div>
+
+    </span>
+
   </div>
-</br></br></br>
-<div class="footer">Have a nice day!</div>
-<br>
+
+  </br></br></br>
+
+  <div class="footer">Have a nice day!</div>
+
+  <br>
 
 
 
