@@ -8,7 +8,8 @@
     <title>WeatherApp</title>
 
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/materialize/1.0.0/css/materialize.min.css">
-<!--     <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.4.1/css/bootstrap.min.css" integrity="sha384-Vkoo8x4CGsO3+Hhxv8T/Q5PaXtkKtu6ug5TOeNV6gBiFeWPGFN9MuhOf23Q9Ifjh" crossorigin="anonymous"> -->
+    <link href="https://fonts.googleapis.com/icon?family=Material+Icons" rel="stylesheet">
+    <!-- <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.4.1/css/bootstrap.min.css" integrity="sha384-Vkoo8x4CGsO3+Hhxv8T/Q5PaXtkKtu6ug5TOeNV6gBiFeWPGFN9MuhOf23Q9Ifjh" crossorigin="anonymous"> -->
 
     <link href="https://fonts.googleapis.com/css?family=Muli:100,200,300,400,500,600,700,900&display=swap" rel="stylesheet">
     <link rel="stylesheet" href="style.css" />
@@ -19,7 +20,7 @@
   
 <body>
     
-<main style="text-align: center;">
+<main>
     
     <br><br>
 
@@ -30,87 +31,95 @@
     <h3><div class="date"></div></h3><br>
     <p class="container" id="city-view"></p>
 
-    <div class="container" style="overflow: hidden; padding-right: .5em;">
-    <input type="text" id="city-input">
-    <input class="z-depth-1 search" type="submit" value="Add to List" id="add-city">
-    </div>
-    <div class="container form-group has-search">
+    <!-- <div class="container col s12" style="overflow: hidden; padding-right: .5em; text-align: center;"> -->
+      <div class="container center">
+      <form>
+        <div class="input-field">
+          <i class="material-icons prefix">search</i>
+          <input type="text" id="city-input">
+          <!-- <label class="label-icon" for="search"></label> -->
+        </div>
+      </form>
+      </div>
+      <!-- <input type="text" id="city-input"> -->
+      <input class="z-depth-1 search" type="submit" value="Add to List" id="add-city">
+      <br><br>
+    <!-- </div> -->
 
-    </div>
-    </div>
-    </div>
 
 
-    <div class="container" id="city-view"></div><br>
+    <!-- <div class="container" id="city-view"></div><br> -->
 
 
     <div class="col s12 day1" style="text-align: center;">
-    <div class="head"><h2 class="cityName head"></h2></div>
-    <div class="info">
-    <div class="wind"></div>
-    <div class="humidity"></div>
-    <div class="tempF"></div>
-    <div class="weather"></div>
+      <div class="head"><h2 class="cityName head"></h2></div>
+      <div class="info">
+      <div class="wind"></div>
+      <div class="humidity"></div>
+      <div class="tempF"></div>
+      <div class="weather"></div>
     </div>
+    <br>
+
+
+    <div class="fc row z-depth-0 container" style="text-align: center; display: inline-block;">
+
+      <span class="card col l2 offset-l1 s12">
+
+        <b><div class="d1 big"></div></b>
+        <div class="icon1"></div>
+        <div class="tempF1"></div>
+        <div class="wind1"></div>
+        <div class="humidity1"></div>
+        <div class="we weather1"></div>
+
+      </span>
+      <!-- <div col l10 s 12> -->
+      <span class="card col l2 s12">
+
+        <b><div class="d2 big"></div></b>
+        <div class="icon2"></div>
+        <div class="tempF2"></div>
+        <div class="wind2"></div>
+        <div class="humidity2"></div>
+        <div class="we weather2"></div>
+
+      </span>
+
+      <span class="card col l2 s12">
+
+        <b><div class="d3 big"></div></b>
+        <div class="icon3"></div>
+        <div class="tempF3"></div>
+        <div class="wind3"></div>
+        <div class="humidity3"></div>        
+        <div class="we weather3"></div>
+
+      </span>
+
+      <span class="card col l2 s12">
+
+        <b><div class="d4 big"></div></b>
+        <div class="icon4"></div>
+        <div class="tempF4"></div>
+        <div class="wind4"></div>
+        <div class="humidity4"></div>
+        <div class="we weather4"></div>
+
+      </span>
+
+      <span class="card col l2 s12">
+
+        <b><div class="d5 big"></div></b>
+        <div class="icon5"></div>
+        <div class="tempF5"></div>
+        <div class="wind5"></div>
+        <div class="humidity5"></div>
+        <div class="we weather5"></div>
+
+      </span>
+
     </div>
-
-
-    <div class="fc m5 s12 row z-depth-0" style="text-align: center;">
-
-    <span class="card col s2 5">
-
-      <b><div class="d1 big"></div></b>
-      <div class="icon1"></div>
-      <div class="tempF1"></div>
-      <div class="wind1"></div>
-      <div class="humidity1"></div>
-      <div class="we weather1"></div>
-
-    </span>
-
-    <span class="card col l2 s12">
-
-      <b><div class="d2 big"></div></b>
-      <div class="icon2"></div>
-      <div class="tempF2"></div>
-      <div class="wind2"></div>
-      <div class="humidity2"></div>
-      <div class="we weather2"></div>
-
-    </span>
-
-    <span class="card col l2 s12">
-
-      <b><div class="d3 big"></div></b>
-      <div class="icon3"></div>
-      <div class="tempF3"></div>
-      <div class="wind3"></div>
-      <div class="humidity3"></div>        
-      <div class="we weather3"></div>
-
-    </span>
-
-    <span class="card col l2 s12">
-
-      <b><div class="d4 big"></div></b>
-      <div class="icon4"></div>
-      <div class="tempF4"></div>
-      <div class="wind4"></div>
-      <div class="humidity4"></div>
-      <div class="we weather4"></div>
-
-    </span>
-
-    <span class="card col l2 s12">
-
-      <b><div class="d5 big"></div></b>
-      <div class="icon5"></div>
-      <div class="tempF5"></div>
-      <div class="wind5"></div>
-      <div class="humidity5"></div>
-      <div class="we weather5"></div>
-
-    </span>
 
     </div>
 
