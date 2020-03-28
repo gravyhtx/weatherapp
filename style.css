@@ -132,4 +132,12 @@ button:focus {
   button {
     font-size: 18px !important;
   }
+
+  .input-field {
+    width: 300px;
+    display: inline-block;
+    text-align: center;
+    align-items: center;
+  }
+
 }
