@@ -16,7 +16,7 @@ body,
 }
 
 .large {
-  color: rgb(18, 18, 82);
+  color: rgb(37, 71, 175);
   font-size: 80px;
 }
 
@@ -74,11 +74,62 @@ h3 {
   /* background-color: royalblue; */
   color: aliceblue;
   background-color: royalblue;
-  border: 0px;
+  border: 2px solid rgb(65, 99, 201);
+  border-radius: 10px;
   padding: 20px !important;
   margin: 10px
 }
 
 .big {
   font-size: 24px;
+}
+
+button {
+  background-color: rgb(82, 135, 243);
+  color: white;
+  padding: 5px;
+  padding-left: 10px;
+  padding-right: 10px;
+  border: 2px solid rgb(98, 148, 248);
+  border-radius: 10px;
+}
+
+button:hover {
+  background-color: rgb(71, 126, 236);
+  color: white;
+  border: 2px solid rgb(156, 187, 248);
+}
+
+button:visited {
+  background-color: rgb(77, 118, 241) !important;
+}
+
+button:active {
+  background-color: rgb(77, 118, 241) !important;
+}
+
+button:focus {
+  background-color: rgb(56, 101, 236) !important;
+}
+
+/* label underline focus color */
+.input-field input[type=text]:focus {
+  border-bottom: 1px solid rgb(54, 113, 180) !important;
+  box-shadow: 0 0 0 0 royalblue !important;
+}
+
+
+@media only screen and (max-width: 768px) {
+
+  .large {
+    font-size: 50px;
+  }
+
+  .date {
+    font-size: 20px;
+  }
+
+  button {
+    font-size: 18px !important;
+  }
 }
