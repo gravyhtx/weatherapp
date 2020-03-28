@@ -2,60 +2,60 @@
 <html lang="en">
 <head>
     
-  <meta charset="UTF-8" />
-  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-  <meta http-equiv="X-UA-Compatible" content="ie=edge" />
-  <title>WeatherApp</title>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <meta http-equiv="X-UA-Compatible" content="ie=edge" />
+    <title>WeatherApp</title>
 
-  <!-- <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/materialize/1.0.0/css/materialize.min.css"> -->
-  <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.4.1/css/bootstrap.min.css" integrity="sha384-Vkoo8x4CGsO3+Hhxv8T/Q5PaXtkKtu6ug5TOeNV6gBiFeWPGFN9MuhOf23Q9Ifjh" crossorigin="anonymous">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/materialize/1.0.0/css/materialize.min.css">
+<!--     <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.4.1/css/bootstrap.min.css" integrity="sha384-Vkoo8x4CGsO3+Hhxv8T/Q5PaXtkKtu6ug5TOeNV6gBiFeWPGFN9MuhOf23Q9Ifjh" crossorigin="anonymous"> -->
 
-  <link href="https://fonts.googleapis.com/css?family=Muli:100,200,300,400,500,600,700,900&display=swap" rel="stylesheet">
-  <link rel="stylesheet" href="style.css" />
+    <link href="https://fonts.googleapis.com/css?family=Muli:100,200,300,400,500,600,700,900&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="style.css" />
 
+    <title>WeatherApp//5-Day Forecast</title>
+    
 </head>
   
-<title>WeatherApp//5-Day Forecast</title>
-  
 <body>
+    
+<main style="text-align: center;">
+    
+    <br><br>
 
-  <br><br>
-  
-  <div class="container">
-    <div class="large">
+    <div class="container large">
     WeatherApp⛅
     </div>
-  </div>
-  
-  <h3><div class="date"></div></h3><br>
-  <p class="container" id="city-view"></p>
 
-  <div class="container" style="overflow: hidden; padding-right: .5em;">
-  <input type="text" id="city-input">
-  <input class="z-depth-1 search" type="submit" value="Add to List" id="add-city">
-  </div>
-  <div class="container form-group has-search">
+    <h3><div class="date"></div></h3><br>
+    <p class="container" id="city-view"></p>
+
+    <div class="container" style="overflow: hidden; padding-right: .5em;">
+    <input type="text" id="city-input">
+    <input class="z-depth-1 search" type="submit" value="Add to List" id="add-city">
+    </div>
+    <div class="container form-group has-search">
 
     </div>
     </div>
-  </div>
+    </div>
 
 
-  <div class="container" id="city-view"></div><br>
+    <div class="container" id="city-view"></div><br>
 
 
-  <div class="col s12 day1" style="text-align: center;">
+    <div class="col s12 day1" style="text-align: center;">
     <div class="head"><h2 class="cityName head"></h2></div>
     <div class="info">
     <div class="wind"></div>
     <div class="humidity"></div>
     <div class="tempF"></div>
     <div class="weather"></div>
-  </div>
-  </div>
+    </div>
+    </div>
 
 
-  <div class="fc m5 s12 row z-depth-0" style="text-align: center;">
+    <div class="fc m5 s12 row z-depth-0" style="text-align: center;">
 
     <span class="card col s2 5">
 
@@ -112,19 +112,20 @@
 
     </span>
 
-  </div>
+    </div>
 
-  </br></br></br>
+    </br></br></br>
 
-  <div class="footer">Have a nice day!</div>
+    <div class="footer">Have a nice day!</div>
 
-  <br>
+    <br>
 
-
+</main>
 
   <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.2.1/jquery.min.js"></script>
   <script src="https://cdnjs.cloudflare.com/ajax/libs/moment.js/2.24.0/moment-with-locales.min.js" type="text/javascript"></script>
   <script type="text/javascript" src="script.js"></script>
+
 </body>
 
 </html>
