@@ -4,7 +4,7 @@ moment()
 //     "q=Bujumbura,Burundi&units=imperial&appid=" + APIKey;
 // var APIKey = "166a433c57516f51dfab1f7edaed8413";
 // var cities = ["houston", "tokyo", "oslo", "mumbai", "london, uk",];
-var cities = ["houston"]
+var cities = ["Houston, TX"]
 
 $('.d1').text(moment(new Date()).add(1,'day').format("MM/DD"));
 $('.d2').text(moment(new Date()).add(2,'day').format("MM/DD"));
