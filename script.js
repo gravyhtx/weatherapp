@@ -16,8 +16,9 @@ var today = moment().format('LLLL');
     $(".date").text(today);
 
 function citySearch(city) {
-
-  city = $(this).attr("data-name").charAt(0).toUpperCase() + name.slice(1);
+  
+  var city00 = $(this).attr("data-name")
+  city = city00.charAt(0).toUpperCase() + name.slice(1);
   var APIKey = "166a433c57516f51dfab1f7edaed8413";
   // var queryURL = "https://api.openweathermap.org/data/2.5/weather?q=" + city +
   // "&units=imperial&appid=" + APIKey;
@@ -71,7 +72,8 @@ function citySearch(city) {
 
 function citySearchTD(city2) {
 
-  city2 = $(this).attr("data-name").charAt(0).toUpperCase() + name.slice(1);
+  var city00b = $(this).attr("data-name")
+  city2 = city00b.charAt(0).toUpperCase() + name.slice(1);
   var APIKey = "166a433c57516f51dfab1f7edaed8413";
   var todayURL = "https://api.openweathermap.org/data/2.5/weather?q=" + city2 +
   "&units=imperial&appid=" + APIKey;
